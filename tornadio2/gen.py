@@ -42,7 +42,7 @@ class SyncRunner(Runner):
         """
         self._callback = callback
 
-        super(SyncRunner, self).__init__(gen)
+        super(SyncRunner, self).__init__(gen, self._callback)
 
     def run(self):
         """Overloaded run function"""
