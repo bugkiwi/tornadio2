@@ -87,7 +87,7 @@ def sync_engine(func):
                 return gen
 
         # Completion callback
-        def finished():
+        def finished(*args, **kwargs):
             data.runner = None
 
             try:
